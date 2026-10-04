@@ -1,0 +1,56 @@
+.social {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--ink-soft);
+  transition: color 0.3s, background 0.3s, transform 0.4s var(--ease-out);
+}
+
+.social a:hover {
+  color: var(--forest-deep);
+  background: var(--sand);
+  transform: translateY(-1px);
+}
+
+.social svg {
+  width: 19px;
+  height: 19px;
+}
+
+.social--labels {
+  gap: 18px;
+}
+
+.social--labels a {
+  width: auto;
+  height: auto;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.social--labels a:hover {
+  background: none;
+  transform: none;
+}
+
+.social--light a {
+  color: var(--sage);
+}
+
+.social--light a:hover {
+  color: var(--gold);
+  background: rgba(249, 246, 238, 0.08);
+}

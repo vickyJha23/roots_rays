@@ -1,0 +1,32 @@
+.marquee {
+  overflow: hidden;
+  background: var(--forest);
+  color: var(--paper);
+  border-block: 1px solid var(--forest-deep);
+  padding-block: 18px;
+}
+
+.marquee__track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+.marquee__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 32px;
+  padding-right: 32px;
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.4vw, 34px);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.marquee__mark {
+  width: 22px;
+  height: 22px;
+  color: var(--gold);
+  flex: none;
+}

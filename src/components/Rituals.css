@@ -1,0 +1,81 @@
+.rituals__head {
+  display: grid;
+  gap: 20px;
+  margin-bottom: clamp(40px, 5vw, 72px);
+}
+
+.rituals__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ritual__grid {
+  display: grid;
+  grid-template-columns: 140px 96px 1fr;
+  gap: 32px;
+  align-items: center;
+  padding: clamp(28px, 3.4vw, 48px) 0;
+}
+
+.ritual__step {
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.ritual__step small {
+  font-size: inherit;
+  color: var(--gold);
+}
+
+.ritual__icon {
+  width: 64px;
+  height: 64px;
+  color: var(--forest);
+}
+
+.ritual__text {
+  max-width: 620px;
+}
+
+.ritual__text h3 {
+  font-family: var(--serif);
+  font-size: clamp(24px, 2.6vw, 36px);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--forest-deep);
+}
+
+.ritual__text p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+
+.rituals__cta {
+  margin-top: clamp(40px, 5vw, 64px);
+}
+
+@media (max-width: 760px) {
+  .ritual__grid {
+    grid-template-columns: 56px 1fr;
+    grid-template-areas:
+      'step step'
+      'icon text';
+    gap: 14px 20px;
+  }
+  .ritual__step {
+    grid-area: step;
+  }
+  .ritual__icon {
+    grid-area: icon;
+    width: 48px;
+    height: 48px;
+  }
+  .ritual__text {
+    grid-area: text;
+  }
+}

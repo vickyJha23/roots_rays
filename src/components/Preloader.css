@@ -1,0 +1,36 @@
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: var(--forest-deep);
+  color: var(--gold);
+  display: grid;
+  place-items: center;
+}
+
+.preloader__inner {
+  display: grid;
+  justify-items: center;
+  gap: 22px;
+}
+
+.preloader__mark {
+  width: 72px;
+  height: 72px;
+}
+
+.preloader__name {
+  display: flex;
+  gap: 0.3em;
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.6vw, 32px);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--paper);
+}
+
+.preloader__name span {
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 0.1em;
+}
